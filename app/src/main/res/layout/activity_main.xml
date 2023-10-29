@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     android:orientation="vertical"
-    tools:context=".MainActivity"
-    android:background="#151a30">
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView"
@@ -14,18 +14,18 @@
         android:layout_height="140dp"
         android:gravity="center"
         android:padding="8dp"
-        android:textColor="@color/button"
         android:text="ADD NEW STUDENT"
+        android:textColor="@color/button"
         android:textSize="30dp"
         android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        app:backgroundTint="@null"
         android:background="@drawable/header"
-        android:paddingTop="50dp">
+        android:orientation="vertical"
+        android:paddingTop="50dp"
+        app:backgroundTint="@null">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -46,7 +46,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/editTextText4"
+                android:id="@+id/edtName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -79,7 +79,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/editTextText5"
+                android:id="@+id/edtBirthday"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -112,7 +112,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/editTextText6"
+                android:id="@+id/edtEmail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -138,7 +138,7 @@
             android:paddingBottom="8dp">
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/btnView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="6dp"
@@ -152,7 +152,7 @@
                 app:backgroundTint="@null" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/btnSave"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="6dp"

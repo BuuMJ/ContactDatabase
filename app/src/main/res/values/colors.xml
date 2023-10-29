@@ -2,6 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="hintColor">#4a4f65</color>
+    <color name="hintColor">#8D93AE</color>
     <color name="button">#ff8801</color>
+    <color name="background">#151a30</color>
+    <color name="backgroundCard">#0D151A30</color>
 </resources>
