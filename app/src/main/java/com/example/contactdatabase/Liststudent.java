@@ -3,8 +3,10 @@ package com.example.contactdatabase;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -49,9 +51,18 @@ public class Liststudent extends AppCompatActivity {
             TextView studentDetail = new TextView(this);
             studentDetail.setText(detail);
             studentDetail.setTextSize(20);
-
-            studentLayout.addView(studentDetail);
-            studentLayout.setBackground(getResources().getDrawable(R.drawable.liststudent));
+            if (studentDetail.getText().toString().equals("")) {
+                TextView emptyText = new TextView(this);
+                emptyText.setText("There are no students on the list");
+                emptyText.setTextSize(20);
+                emptyText.setGravity(Gravity.CENTER);
+                emptyText.setTypeface(emptyText.getTypeface(), Typeface.BOLD);
+                studentLayout.addView(emptyText);
+            }
+            else {
+                studentLayout.addView(studentDetail);
+                studentLayout.setBackground(getResources().getDrawable(R.drawable.liststudent));
+            }
             studentListContainer.addView(studentLayout);
         }
     }
